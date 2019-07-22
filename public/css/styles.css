@@ -53,11 +53,26 @@ footer {
 /* Index Style  */
 
 .search-container , #search{
-display: block;
+display: inline-block;
 }
 
-
-
-.msg1{
+.msg1 {
     color: rgb(46, 45, 45)
+}
+
+#search{
+    padding: 10px;
+    border: 3px solid gray; 
+}
+#searchBtn{
+    padding: 12px;
+    background: #eeeeee;
+    color: rgb(46, 45, 45);
+    border: 1px solid rgb(182, 182, 182);
+}
+#searchBtn:hover{
+    cursor: pointer;
+    background: gray;
+    color: white;
+    transition: .2s;
 }

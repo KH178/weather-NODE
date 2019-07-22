@@ -15,7 +15,7 @@ const getWeather = require(srcDirPath + '/utils/getWeather');
 
 // Setup handlebars engine and views location.
 app.set('view engine', 'hbs')
-app.set('views', viewspath)
+app.set('views', viewspath) 
 hbs.registerPartials(partialsPath)
 
 // Setup static directory to serve.
