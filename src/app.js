@@ -2,11 +2,7 @@ const express = require('express');
 const path = require('path');
 const hbs = require('hbs');
 
-
-
-
-
-// Define Paths For Express Config.
+// Define Paths For Express Config
 const app = express();
 const publicDirPath = path.join(__dirname, '../public');
 const srcDirPath = path.join(__dirname, '../src')
