@@ -22,7 +22,7 @@ weatherform.addEventListener('submit', () => {
         }
       
         place.innerHTML = data.place;
-        temprature.innerHTML = data.temprature;
+        temprature.innerHTML = data.temprature+'°C';
         icon.innerHTML = data.icon;
         summary.innerHTML = data.summary;
         summary.innerHTML += 'Chances of rain '+data.probabilityForRain+'%';
