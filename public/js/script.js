@@ -12,7 +12,7 @@ search.addEventListener('focus',()=>{
 
 weatherform.addEventListener('submit', () => {
     event.preventDefault();
-    fetch('http://localhost:3000/weather?address=' + search.value + '').then((resp) => {
+    fetch('/weather?address=' + search.value + '').then((resp) => {
         return resp.json();
     }).then((data) => {
         if (data.err) {

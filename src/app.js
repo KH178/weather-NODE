@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const hbs = require('hbs');
+const port = process.env.PORT || 3000;
 
 // Define Paths For Express Config
 const app = express();
@@ -86,6 +87,6 @@ app.get('*', (req, res) => {
   })
 })
 
-app.listen(3000, () => {
-  console.log('Server Running On Port 3000');
+app.listen(port, () => {
+  console.log('Server Running On Port '+port);
 })
