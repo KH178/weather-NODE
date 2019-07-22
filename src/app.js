@@ -57,14 +57,16 @@ app.get('/weather', (req, res) => {
     if (err) {
       return res.send({err})
     }
-    getWeather(lati, longi,(err, {summary,probabilityForRain}) => {
+    getWeather(lati, longi,(err, {summary,probabilityForRain,icon,temprature}) => {
       if (err) {
         return res.send({err})
       }
       return res.send({
-        place : place,
+        place,
         summary,
-        probabilityForRain
+        probabilityForRain,
+        icon,
+        temprature
       })
     })
   })

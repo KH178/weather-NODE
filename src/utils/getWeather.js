@@ -16,7 +16,8 @@ const getWeather = (latitude,longitude,callback)=>{
             callback(undefined, {
                 summary : body.daily.data[0].summary,
                 temprature : body.currently.temperature,
-                probabilityForRain: ((body.daily.data[0].precipProbability) * 100).toFixed(2)
+                probabilityForRain: ((body.daily.data[0].precipProbability) * 100).toFixed(2),
+                icon : body.daily.data[0].icon
 
             })
             

@@ -3,12 +3,10 @@ const weatherform = document.querySelector('form');
 const btn = document.getElementById('searchBtn');
 const place= document.querySelector('.place');
 const summary = document.querySelector('.summary');
+const temprature = document.querySelector('.temprature');
+const icon = document.querySelector('.icon');
 
 
-search.addEventListener('focus',()=>{
-    search.classList.add('.search-expand');
-    search.classList.remove('#search');
-})
 
 weatherform.addEventListener('submit', () => {
     event.preventDefault();
@@ -24,8 +22,10 @@ weatherform.addEventListener('submit', () => {
         }
       
         place.innerHTML = data.place;
+        temprature.innerHTML = data.temprature;
+        icon.innerHTML = data.icon;
         summary.innerHTML = data.summary;
-        summary.innerHTML += data.probabilityForRain;
+        summary.innerHTML += 'Chances of rain '+data.probabilityForRain+'%';
         console.log(data);
     })
 
