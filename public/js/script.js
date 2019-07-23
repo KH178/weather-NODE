@@ -25,6 +25,7 @@ weatherform.addEventListener('submit', () => {
             return summary.innerHTML = 'Please enter your Location';
         }
         addContent(data.place, data.temprature, data.icon, data.summary, data.probabilityForRain);
+        search.value = '';
 
     })
 
@@ -33,9 +34,9 @@ weatherform.addEventListener('submit', () => {
 function addContent(pl = '', tem = '', ic = '', su = '', prob = '') {
     place.innerHTML = pl;
     temprature.innerHTML = tem + '°c';
-    icon.innerHTML = ic;
+    // icon.innerHTML = ic;
     summary.innerHTML = su;
-    rainProb.innerHTML = 'Chances of rain ' + prob + '%';
+    rainProb.innerHTML = 'There is ' + prob + '% Chances of rain';
 }
 
 function removeContent(p) {
@@ -44,4 +45,44 @@ function removeContent(p) {
     icon.innerHTML = '';
     summary.innerHTML = '';
     rainProb.innerHTML = '';
+}
+
+function setIcon(icon) {
+
+    switch (icon) {
+        case 'clear-day':
+            // code block
+            break;
+        case 'clear-night':
+            // code block
+            break;
+        case 'rain':
+            // code block
+            break;
+        case 'snow':
+            // code block
+            break;
+        case 'sleet':
+            // code block
+            break;
+        case 'wind':
+            // code block
+            break;
+        case 'fog':
+            // code block
+            break;
+        case 'cloudy':
+            // code block
+            break;
+        case 'partly-cloudy-day':
+            // code block
+            break;
+        case 'partly-cloudy-night':
+            // code block
+            break;
+        default:
+                // hail
+            // code block
+    }
+
 }

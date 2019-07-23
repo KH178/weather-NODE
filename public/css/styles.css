@@ -76,3 +76,9 @@ display: inline-block;
     color: white;
     transition: .2s;
 }
+
+.temprature{
+    font-size: 3em;
+    color: rgb(44, 44, 44);
+    font-weight:    bold;
+}

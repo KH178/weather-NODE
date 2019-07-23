@@ -19,6 +19,7 @@ const getWeather = (latitude,longitude,callback)=>{
                 probabilityForRain: ((body.daily.data[0].precipProbability) * 100).toFixed(2),
                 icon : body.daily.data[0].icon
 
+
             })
             
         }
